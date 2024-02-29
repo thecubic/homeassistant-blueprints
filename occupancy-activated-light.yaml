@@ -2,7 +2,7 @@ blueprint:
   name: "Occupancy-activated Light extended"
   description: "Turn on a light when a movement occurs"
   domain: automation
-  source_url: https://github.com/giannisigalotti/HomeAssistant/blob/main/blueprints/motion-activated-light.yaml
+  source_url: https://github.com/thecubic/homeassistant-blueprints/blob/main/occupancy-activated-light.yaml
   input:
     occupancy_entity:
       name: "Motion sensor"
