@@ -5,7 +5,7 @@ blueprint:
   source_url: https://github.com/thecubic/homeassistant-blueprints/blob/main/occupancy-activated-light.yaml
   input:
     occupancy_entity:
-      name: "Motion sensor"
+      name: "Occupancy sensor"
       selector:
         entity:
           domain: binary_sensor
@@ -138,7 +138,7 @@ action:
     target: !input light_target
   - wait_for_trigger:
       platform: state
-      entity_id: !input motion_entity
+      entity_id: !input occupancy_entity
       from: "on"
       to: "off"
     timeout:
